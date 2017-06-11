@@ -1,9 +1,9 @@
 <ion-header>
+
   <ion-navbar color="green">
-    <ion-title>
-      Profile
-    </ion-title>
+    <ion-title>Registration</ion-title>
   </ion-navbar>
+
 </ion-header>
 
 <ion-content>
@@ -29,5 +29,18 @@
       <ion-input type="text" value="Arab"></ion-input>
     </ion-item>
   </ion-list>
+
+  <p style="text-align: center;">Are you a <b>learner</b> or a <b>tutor</b>?</p>
+
+  <ion-item>
+     <ion-range min="0" max="1" step="1" snaps="true" [(ngModel)]="warmth" color="danger">
+       <ion-icon range-left color="green" name="woman"></ion-icon>
+       <ion-icon range-right color="green" name="school"></ion-icon>
+     </ion-range>
+   </ion-item>
+
+  <div padding>
+    <button color="green" ion-button round block (click)="dismiss()">Register</button>
+  </div>
 
 </ion-content>

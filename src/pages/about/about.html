@@ -1,11 +1,35 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="green">
     <ion-title>
-      About
+      Courses
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="card-background-page">
+
+  <ion-card (click)="page('eng')">
+    <img src="assets/images/Eng.png"/>
+    <div class="card-title">Engineering</div>
+    <div class="card-subtitle">32 Tutors</div>
+  </ion-card>
+
+  <ion-card (click)="page('geo')">
+    <img src="assets/images/Geo.jpg"/>
+    <div class="card-title">Geography</div>
+    <div class="card-subtitle">65 Tutors</div>
+  </ion-card>
+
+  <ion-card (click)="page('lang')">
+    <img src="assets/images/Lang.jpg"/>
+    <div class="card-title">Languages</div>
+    <div class="card-subtitle">12 Tutors</div>
+  </ion-card>
+
+  <ion-card (click)="page('math')">
+    <img src="assets/images/Math.png"/>
+    <div class="card-title">Math</div>
+    <div class="card-subtitle">42 Tutors</div>
+  </ion-card>
 
 </ion-content>

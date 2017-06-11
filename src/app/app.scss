@@ -14,3 +14,22 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+$my-variable: #629d93;
+
+.tabs-ios .tabbar,
+.header .header-ios,
+ion-header,
+ion-navbar,
+.toolbar .toolbar-ios{
+  background: #629d93;
+  color: #fff !important;
+}
+
+.tabs-ios a,
+.tabs-ios .tab-button-icon,
+.tabs-ios .tab-button,
+.tabs-ios .tab-button:hover:not(.disable-hover), .tabs-ios .tab-button[aria-selected=true]{
+  color: #fff !important;
+}
